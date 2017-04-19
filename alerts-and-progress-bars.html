@@ -26,13 +26,11 @@
 			</div>
 		</header>
 		<section class="well"> <!--this section is about alerts -->
-			<div class="container">
+			<div>
 				<h2>Alerts!</h2>
-				<div class="row">
-					<div class="progress col-xs-10"> <!-- a forshadowing progress bar -->
-						<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%;">
-							<span class="sr-only">20% Complete</span>
-						</div>
+				<div class="progress"> <!-- a forshadowing progress bar -->
+					<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%;">
+						<span class="sr-only">20% Complete</span>
 					</div>
 				</div>
 				<div class="row"> <!--Success alert -->
@@ -113,10 +111,11 @@
 						<p>The code for the alert above would look like this<br>
 							<code>
 								<pre>
-&lt;h2 class="alert alert-warning alert-dissmisible" role="alert&gt;<br>This is a Warning alert that is dismissible. Click --><br>
-	&lt;button type="button" class="close" data-dismiss="alert" aria-label="close"&gt;<br>
-		&lt;span aria-hidden="true"&time;&gt;&lt;/span&gt;<br>
-	&lt;/button&gt;<br>
+&lt;h2 class="alert alert-warning alert-dissmisible" role="alert&gt;
+	This is a Warning alert that is dismissible. Click -->
+	&lt;button type="button" class="close" data-dismiss="alert" aria-label="close"&gt;
+		&lt;span aria-hidden="true"&time;&gt;&lt;/span&gt;
+	&lt;/button&gt;
 &lt;/h2&gt;
 								</pre>
 							</code>
@@ -135,8 +134,10 @@
 						<p>The code for the alert above would look like this<br>
 							<code>
 								<pre>
-&lt;div class="alert alert-info" role="alert&gt;<br>
-	&lt;a href="#" class="alert-link"&gt;<br>This is a link with the same color as the parent element&lt;/a&gt;<br>
+&lt;div class="alert alert-info" role="alert&gt;
+	&lt;a href="#" class="alert-link"&gt;
+		This is a link with the same color as the parent element
+	&lt;/a&gt;
 &lt;/div&gt;
 								</pre>
 							</code>
@@ -146,13 +147,13 @@
 			</div>	
 		</section> <!-- this section is for progress bars-->
 		<section class="well">
-			<div class="container">
+			<div>
 				<div class="row"> <!--default progress bar -->
 					<h2 class="col-xs-10">Progress Bars</h2>
 				</div>
 				<h2>The Default Progress Bar</h2>
-				<div class="row">
-					<div class="progress col-xs-10">
+				<div>
+					<div class="progress">
 						<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
 							<span class="sr-only">30% Complete</span>
 						</div>
@@ -160,7 +161,7 @@
 				</div>
 				<p>To make a default progress bar use this code</p>
 				<div class="row">
-					<code class="col-xs-9">
+					<code class="col-xs-10">
 						<pre>
 &lt;div class="progress"&gt;
 	&lt;div class="progress-bar" role="progressbar" aria-valuenow=
@@ -175,16 +176,13 @@
 					<h2 class="col-xs-10">Progress Bar with indicator label</h2>
 				</div>
 				<p>If you use the same code in the previous example and then remove the .sr-only class from the span tag, you will see the indication</p>
-				<div class="row">
-					<div class="progress col-xs-10">
-						<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-							<span>40% Complete</span>
-						</div>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+						<span>40% Complete</span>
 					</div>
 				</div>
-				
 				<div class="row">
-					<code class="col-xs-9">
+					<code class="col-xs-10">
 						<pre>
 &lt;div class="progress"&gt;
 	&lt;div class="progress-bar" role="progressbar" aria-valuenow=
@@ -199,36 +197,28 @@
 					<h2 class="col-xs-10">Progress Bar with new colors AKA- Contexual Alternatives</h2>
 				</div>
 				<p>You can also use the same color scheme/ word choices as alerts for your progress bar.<br> To change your progress's bar color use the class<br> .progress-bar-success for green<br> .progress-bar-info for blue<br> .progress-bar-warning for orange<br> .progress-bar-danger for red</p>
-				<div class="row">
-					<div class="progress col-xs-10">
-						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
-							<span>45% Complete</span>
-						</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+						<span>45% Complete</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+						<span>50% Complete</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+						<span>55% Complete</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						<span>60% Complete</span>
 					</div>
 				</div>
 				<div class="row">
-					<div class="progress col-xs-10">
-						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-							<span>50% Complete</span>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="progress col-xs-10">
-						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
-							<span>55% Complete</span>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="progress col-xs-10">
-						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							<span>60% Complete</span>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<code class="col-xs-9">
+					<code class="col-xs-10">
 						<pre>
 &lt;div class="progress"&gt;
 	&lt;div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow=
@@ -243,15 +233,13 @@
 					<h2 class="col-xs-10">Progress Bar with stripes!</h2>
 				</div>
 				<p>To add stripes to your progress bar add the class .progress-bar-striped to the inside most div element.</p>
-				<div class="row">
-					<div class="progress col-xs-10">
-						<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
-							<span>65% Complete</span>
-						</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+						<span>65% Complete</span>
 					</div>
 				</div>
 				<div class="row">
-					<code class="col-xs-9">
+					<code class="col-xs-10">
 						<pre>
 &lt;div class="progress"&gt;
 	&lt;div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%;"&gt;
@@ -265,15 +253,13 @@
 					<h2 class="col-xs-10">Animated Progress Bar</h2>
 				</div>
 				<p>Just need to add the class .active</p>
-				<div class="row">
-					<div class="progress col-xs-10">
-						<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-							<span>70% Complete</span>
-						</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+						<span>70% Complete</span>
 					</div>
 				</div>
 				<div class="row">
-					<code class="col-xs-9">
+					<code class="col-xs-10">
 						&lt;div class="progress"&gt;
 							&lt;div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow=
 							"70" aria-valuemin="0" aria-valuemax="100" style="width:70%;"&gt;
@@ -286,21 +272,19 @@
 					<h2 class="col-xs-10">Combined Progress bars AKA- stacked</h2>
 				</div>
 				<p>To stack progress bars wrap a div with the class .progress around all progress bars and delete the role and aria-value attributes</p>
-				<div class="row">
-					<div class="progress col-xs-10">
-						<div class="progress-bar progress-bar-success progress-bar-striped" style="width: 30%;">
-							<span>40%</span>
-						</div>
-						<div class="progress-bar progress-bar-warning" style="width: 20%;">
-							<span>20%</span>
-						</div>
-						<div class="progress-bar progress-bar-info progress-bar-striped" style="width: 15%;">
-							<span>15%</span>
-						</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped" style="width: 30%;">
+						<span>40%</span>
+					</div>
+					<div class="progress-bar progress-bar-warning" style="width: 20%;">
+						<span>20%</span>
+					</div>
+					<div class="progress-bar progress-bar-info progress-bar-striped" style="width: 15%;">
+						<span>15%</span>
 					</div>
 				</div>
 				<div class="row">
-					<code class="col-xs-9">
+					<code class="col-xs-10">
 						<pre>
 &lt;div class="progress"&gt;
 	&lt;div class="progress-bar progress-bar-success progress-bar-striped" style="width:30%;"&gt;
@@ -320,15 +304,13 @@
 					<h2 class="col-xs-10">Maintain a minimum value on the Progress Bar</h2>
 				</div>
 				<p>If you need to show some progress even if the progress is 0% make an inline style of min-width:2em;</p>
-				<div class="row">
-					<div class="progress col-xs-10">
-						<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
-							<span>0%</span>
-						</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+						<span>0%</span>
 					</div>
 				</div>
 				<div class="row">
-					<code class="col-xs-9">
+					<code class="col-xs-10">
 						<pre>
 &lt;div class="progress"&gt;
 	&lt;div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow=
@@ -347,7 +329,7 @@
 					<h2 class="col-xs-10">Bootstrap Alert CSS rule examples</h2>
 				</div>
 				<div class="row">
-					<pre Class="col-xs-10">
+					<pre class="col-xs-10">
 .alert-info {
 	color: #31708f;
 	background-color: #d9edf7;
@@ -363,6 +345,7 @@
 				</div>
 				<div class="row">
 					<h2 class="col-xs-10">Bootstrap Progress Bar CSS rule examples</h2>
+				</div>
 				<div class="row">
 					<pre class="col-xs-10">
 .progress {
@@ -400,7 +383,7 @@
     border: 0;
 					
 					</pre>
-					</div>
+				</div>
 			</div>
 		</section>
 	</div>
